@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-import re as re_
+import numpy as np
 from pathlib import Path
 from sys import float_info as sflt
 

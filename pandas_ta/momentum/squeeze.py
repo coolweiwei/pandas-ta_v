@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from numpy import nan as npNaN
+import numpy as np
 from pandas import DataFrame
 from pandas_ta.momentum import mom
 from pandas_ta.overlap import ema, linreg, sma
@@ -111,15 +111,15 @@ def squeeze(high, low, close, bb_length=None, bb_std=None, kc_length=None, kc_sc
         neg_dec *= squeeze
         neg_inc *= squeeze
 
-        pos_inc.replace(0, npNaN, inplace=True)
-        pos_dec.replace(0, npNaN, inplace=True)
-        neg_dec.replace(0, npNaN, inplace=True)
-        neg_inc.replace(0, npNaN, inplace=True)
+        pos_inc.replace(0, np.nan, inplace=True)
+        pos_dec.replace(0, np.nan, inplace=True)
+        neg_dec.replace(0, np.nan, inplace=True)
+        neg_inc.replace(0, np.nan, inplace=True)
 
         sqz_inc = squeeze * increasing(squeeze)
         sqz_dec = squeeze * decreasing(squeeze)
-        sqz_inc.replace(0, npNaN, inplace=True)
-        sqz_dec.replace(0, npNaN, inplace=True)
+        sqz_inc.replace(0, np.nan, inplace=True)
+        sqz_dec.replace(0, np.nan, inplace=True)
 
         # Handle fills
         if "fillna" in kwargs:

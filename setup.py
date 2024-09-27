@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+import numpy as np
 from distutils.core import setup
 
 long_description = "An easy to use Python 3 Pandas Extension with 130+ Technical Analysis Indicators. Can be called from a Pandas DataFrame or standalone like TA-Lib. Correlation tested with TA-Lib."

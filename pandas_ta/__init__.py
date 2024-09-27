@@ -2,6 +2,7 @@ name = "pandas_ta"
 """
 .. moduleauthor:: Kevin Johnson
 """
+import numpy as np
 from importlib.util import find_spec
 from pathlib import Path
 from pkg_resources import get_distribution, DistributionNotFound
